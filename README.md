@@ -14,7 +14,7 @@ El [display de segmentos](http://www.prometec.net/display-con-interface/) se ali
 El buzzer va conectado a la Arduino según el siguiente esquema, donde SPK1 es el pin analógico de la Arduino y la tensión es +5V, en vez de +3V3:
 
 <p align="center">
-<img src="images/IMG_20170706_133400.jpg" width="300" align = "center">
+<img src="images/IMG_20170706_133400.jpg" width="500" align = "center">
 </p>
 
 El sensor de distancia es un E18-D80NK. Proporciona una salida digital para la detección de objetos y tiene un potenciómetro para variar el rango de detección. Una de sus principales ventajas es que es bastante direccional en uno de sus dos ejes, lo cual permite que se pueda colocar cerca del suelo y en paralelo con este sin llegar a detectarlo. La mejor posición se consigue colocando el plano determinado por los haces de emisión y recepción paralelo al suelo. Si se gira 90 grados es muy probable que detecte el suelo. Este sensor tiene colector abierto, es decir, hay que conectar una resistencia de 1K entre Vcc y el colector del sensor. En esta [imagen](https://www.robotics.org.za/image/catalog/11000_Sensors/IR_Sensor/E18-D80NK_04.jpg) se muestra el diagrama de conexión, aunque cambian la resistencia de 1K por una de 10K.
@@ -22,6 +22,7 @@ El sensor de distancia es un E18-D80NK. Proporciona una salida digital para la d
 La batería Lipo de 2S llega a 8V4, por lo que la he conectado al pin RAW de la Arduino mini Pro para alimentar toda la electrónica a través de su regulador de 5V. He incluido un interruptor y he colocado un [divisor resistivo](https://upload.wikimedia.org/wikipedia/commons/d/db/Resistive_divider.png) con R1=33KOhm y R2=47KOhm para leer la tensión de batería a través de un pin analógico de la Arduino. Es muy importante bajar de Vin=8V4 (máximo) de la batería a Vout=5V (máximo) admitidos en el puerto analógico para no estropearlo. De ahí que haya elegido esos valores de resistencias. Cuando la batería baja de una determinada tensión, enciendo el led para saber que la tensión está baja y que tengo que recargar la batería.
 
 [Vídeo de las pruebas de la electrónica.](https://youtu.be/k0APr93qXZY)
+
 [Vídeo del temporizador terminado.](https://youtu.be/zVGfbdwtDH8)
 
 

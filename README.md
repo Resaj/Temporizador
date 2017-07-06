@@ -4,12 +4,12 @@ Cronómetro para tomar tiempos en las pruebas de robots seguidores de línea.
 Este proyecto está basado en los temporizadores de Xavier Puigmal y Andreu Marsal.
 
 <p align="center">
-<img src="images/IMG_20170706_131339.jpg" width="300" align = "center">
+<img src="images/IMG_20170706_131339.jpg" width="500" align = "center">
 </p>
 
 Está compuesto por una Arduino mini pro, un display de segmentos, un buzzer, un sensor de distancia, una batería lipo 2S con divisor resistivo para monitorizarla y un interruptor.
 
-El [display de segmentos](http://www.prometec.net/display-con-interface/) se alimenta a 5V y tiene un integrado que actúa de interfaz I2C entre el display y la Arduino. A veces esa comunicación da problemas y hace que el primer dígito que muestra el display sea erróneo, por lo que aconsejo que en vez de utilizar este display se haga uso de otro directamente conectado a la Arduino sin interfaz I2C. El problema actual puede deberse a que la interfaz esté físicamente defectuosa, que haya ruido en el circuito o que las librerías no estén adaptadas correctamente para el display.
+El [display de segmentos](http://www.prometec.net/display-con-interface/) se alimenta a 5V y tiene un integrado que actúa de interfaz I2C entre el display y la Arduino. A veces esa comunicación da problemas y hace que el primer dígito que muestra el display sea erróneo, por lo que aconsejo que en vez de utilizar este display se haga uso de otro directamente conectado a la Arduino sin interfaz I2C. El problema actual puede deberse a que la interfaz esté físicamente defectuosa, que haya ruido en el circuito o que las librerías no estén adaptadas correctamente para el display. En cualquier caso no compensa invertir tiempo en modificarlo porque las vueltas suelen ser de menos de 10 segundos en las pruebas de carreras en las que estoy acostumbrado a participar.
 
 El buzzer va conectado a la Arduino según el siguiente esquema, donde SPK1 es el pin analógico de la Arduino y la tensión es +5V, en vez de +3V3:
 

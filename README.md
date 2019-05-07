@@ -26,12 +26,12 @@ La batería Lipo de 2S llega a 8V4, por lo que la he conectado al pin RAW de la 
 [Vídeo del temporizador terminado.](https://youtu.be/zVGfbdwtDH8)
 
 
-## Authors
+## Autor
 
 [Rubén Espino San José](https://github.com/Resaj)
 
 
-## License
+## Licencia
 
 <p align="center">
 
